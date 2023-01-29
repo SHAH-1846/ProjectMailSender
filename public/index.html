@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-mail Sender Application</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <form action="/send_email" method="post" enctype="multipart/form-data" style="max-width:px;margin:auto">
+    <h2>e-Mail Sender Application</h2>
+    <div class="input-wrapper"><i class="fa fa-user icon"></i>
+
+
+        <input type="text " class="input-field" placeholder="To: i.e unclebigbay@gmail.com" name="email" autocomplete="off" required>
+
+    </div>
+    <div class="input-wrapper">
+        <i class="fa fa-envelope icon"></i>
+
+        <input type="text" class="input-field" placeholder="Subject" name="subject" required>
+    </div>
+    <div class="input-wrapper">
+        <textarea name="message" id="message" placeholder="Message body..." style="height:200px; width:100%" required></textarea>
+    </div>
+
+    <div class="attachment-wrapper">
+        <label for="attachment">Attachment</label>
+        <input type="file" id="attachment" name="attachment" required>
+    </div>
+
+    <button type="submit" class="send-btn">Send Mail</button>
+</form>
+</body>
+</html>
